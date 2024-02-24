@@ -1,170 +1,85 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faTwitter,
-  faGoogle,
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faGem,
-  faHome,
-  faEnvelope,
-  faPhone,
-  faPrint,
-} from "@fortawesome/free-solid-svg-icons";
+import "./Footer.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-lg-start bg-body-tertiary text-muted">
-      {/* Section: Social media */}
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        {/* Left */}
-        <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+    <footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="footer-col">
+            <h4>company</h4>
+            <ul>
+              <oi>
+                <a href="#">about us</a>
+              </oi>
+              <li>
+                <a href="#">our services</a>
+              </li>
+              <li>
+                <a href="#">privacy policy</a>
+              </li>
+              <li>
+                <a href="#">affiliate program</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">shipping</a>
+              </li>
+              <li>
+                <a href="#">returns</a>
+              </li>
+              <li>
+                <a href="#">order status</a>
+              </li>
+              <li>
+                <a href="#">payment options</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li>
+                <a href="#">watch</a>
+              </li>
+              <li>
+                <a href="#">bag</a>
+              </li>
+              <li>
+                <a href="#">shoes</a>
+              </li>
+              <li>
+                <a href="#">dress</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4>follow us</h4>
+            <div className="social-links">
+              <a href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        {/* Left */}
-
-        {/* Right */}
-        <div>
-          <a href="/" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-          <a href="/" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a href="/" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faGoogle} />
-          </a>
-          <a href="/" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a href="/" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="/" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </div>
-        {/* Right */}
-      </section>
-      {/* Section: Social media */}
-
-      {/* Section: Links  */}
-      <section className="">
-        <Container className="text-center text-md-start mt-5">
-          {/* Grid row */}
-          <Row className="mt-3">
-            {/* Grid column */}
-            <Col md="3" lg="3" xl="3" className="mx-auto mb-4">
-              {/* Content */}
-              <h6 className="text-uppercase fw-bold mb-4">
-                <FontAwesomeIcon icon={faGem} className="me-3" />
-                Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
-            </Col>
-            {/* Grid column */}
-
-            {/* Grid column */}
-            <Col md="3" lg="3" xl="3" className="mx-auto mb-4">
-              {/* Links */}
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  React
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Laravel
-                </a>
-              </p>
-            </Col>
-            {/* Grid column */}
-
-            {/* Grid column */}
-            <Col md="3" lg="3" xl="3" className="mx-auto mb-4">
-              {/* Links */}
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Help
-                </a>
-              </p>
-            </Col>
-            {/* Grid column */}
-
-            {/* Grid column */}
-            <Col md="3" lg="3" xl="3" className="mx-auto mb-4">
-              {/* Links */}
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <FontAwesomeIcon icon={faHome} className="me-3" /> New York, NY
-                10012, US
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faEnvelope} className="me-3" />
-                info@example.com
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faPhone} className="me-3" /> + 01 234 567
-                88
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faPrint} className="me-3" /> + 01 234 567
-                89
-              </p>
-            </Col>
-            {/* Grid column */}
-          </Row>
-          {/* Grid row */}
-        </Container>
-      </section>
-      {/* Section: Links  */}
-
-      {/* Copyright */}
-      <div
-        className="text-center p-4"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
-        © 2021 Copyright:
-        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
       </div>
-      {/* Copyright */}
     </footer>
   );
 };
