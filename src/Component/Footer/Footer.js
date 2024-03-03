@@ -11,7 +11,9 @@ const Footer = () => {
             <h4>company</h4>
             <ul>
               <oi>
-                <a href="#">about us</a>
+                <a className="about-us" href="#">
+                  About Us
+                </a>
               </oi>
               <li>
                 <a href="#">our services</a>
