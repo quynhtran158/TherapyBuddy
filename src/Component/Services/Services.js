@@ -1,14 +1,16 @@
-// import React, { Component } from "react";
-// import DoctorCard from "./DoctorCard";
-// import "./Services.css";
+import "./Services.css";
+import PricingCard from "./Pricing/PricingCard";
+import "./Pricing/PricingCard.css";
+import "./Pricing/PricingTable.css";
+import PricingTable from "./Pricing/PricingTable";
 
-// function Services() {
-//   return (
-//     <section className="Home" id="Home">
-//       <div id="google_translate_button"></div>
-//       <DoctorCard />
-//     </section>
-//   );
-// }
+function Services() {
+  return (
+    <div className="services">
+      <PricingCard />
+      <PricingTable />
+    </div>
+  );
+}
 
-// export default Services;
+export default Services;
